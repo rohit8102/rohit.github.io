@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohit Kumar | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d1117;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #58a6ff;
+      animation: fadeIn 2s ease;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #c9d1d9;
+      max-width: 600px;
+      margin: 20px auto;
+      animation: fadeIn 2.5s ease;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      color: #fff;
+      background-color: #238636;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: 0.3s;
+      animation: fadeIn 3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2ea043;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #2ea043;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 10px;
+      border: 3px solid #58a6ff;
+      box-shadow: 0 0 20px #58a6ff;
+      animation: fadeIn 1.5s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="Rohit_Photo.jpeg" alt="Rohit Kumar Photo" />
+  <h1>Rohit Kumar</h1>
+  <p>
+    I'm a BCA student from R.L.S.Y College, Aurangabad. Passionate about coding,
+    web development, and learning new technologies. I love creating projects that combine creativity and logic.
+  </p>
+  <a href="resume.html" class="btn">View Resume</a>
+  <a href="certificates.html" class="btn">Certificate</a>
+  <!-- ⚖️ COPYRIGHT & LEGAL DISCLAIMER FOOTER -->
+<footer id="site-footer" role="contentinfo" aria-label="Site legal and copyright">
+  <style>
+    #site-footer {
+      background: linear-gradient(180deg, rgba(8,10,13,0.9), rgba(12,14,18,0.95));
+      color: #c9d1d9;
+      padding: 18px 20px;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(88,166,255,0.06);
+      box-shadow: 0 -6px 30px rgba(88,166,255,0.02);
+      position: relative;
+      z-index: 10;
+      animation: footerFade 900ms ease;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    #site-footer .short {
+      max-width: 900px;
+      text-align: center;
+      color: #bfc8d4;
+      line-height: 1.4;
+    }
+    #site-footer .short strong {
+      color: #58a6ff;
+      font-weight: 600;
+    }
+    .footer-btn {
+      background: transparent;
+      border: 1px solid rgba(88,166,255,0.12);
+      color: #58a6ff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+      backdrop-filter: blur(4px);
+    }
+    .footer-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 26px rgba(88,166,255,0.12);
+      background: rgba(88,166,255,0.03);
+    }
+    /* Modal */
+    #disclaimer-modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      background: rgba(3,6,9,0.6);
+      padding: 20px;
+    }
+    #disclaimer-modal.active { display: flex; }
+    .modal-card {
+      width: 100%;
+      max-width: 880px;
+      max-height: 86vh;
+      overflow: auto;
+      background: linear-gradient(180deg, #0e1419, #0b0f14);
+      border-radius: 12px;
+      border: 1px solid rgba(88,166,255,0.08);
+      padding: 22px;
+      color: #dbe7ff;
+      box-shadow: 0 18px 60px rgba(2,6,23,0.7);
+      animation: modalPop 220ms cubic-bezier(.2,.9,.2,1);
+    }
+    .modal-card h3 {
+      margin: 0 0 8px 0;
+      color: #58a6ff;
+      font-size: 1.05rem;
+    }
+    .modal-card p {
+      color: #c9d1d9;
+      line-height: 1.5;
+      margin: 12px 0;
+      white-space: pre-wrap;
+    }
+    .modal-close {
+      display: inline-block;
+      margin-top: 12px;
+      background: #232a33;
+      border: 1px solid rgba(255,255,255,0.04);
+      color: #cfe6ff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    @keyframes footerFade {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes modalPop {
+      from { opacity: 0; transform: translateY(8px) scale(.995); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @media (max-width:600px) {
+      #site-footer { padding: 14px; font-size: 0.85rem; }
+      .footer-btn { padding: 7px 10px; }
+      .modal-card { padding: 16px; max-width: 96%; }
+    }
+  </style>
+
+  <div class="short">
+    <strong>Copyright © Rohit Kumar. All Rights Reserved.</strong>
+    — This website is published solely for <em>educational and professional demonstration purposes</em>.
+    Unauthorized reproduction or misuse of any content is strictly prohibited.
+  </div>
+
+  <button class="footer-btn" id="readDisclaimer">Read Full Disclaimer</button>
+</footer>
+
+<!-- MODAL POP-UP -->
+<div id="disclaimer-modal">
+  <div class="modal-card">
+    <h3>Copyright & Legal Disclaimer</h3>
+    <p>
+Copyright © Rohit Kumar. All Rights Reserved.
+
+This website and all its contents — including personal details, educational records, project files, documents, and design materials — are the intellectual property of Rohit Kumar.
+
+The materials presented herein are published solely for educational and professional demonstration purposes. Unauthorized copying, reproduction, redistribution, or misuse of any part of this website, whether in whole or in part, without the author’s explicit written consent, is strictly prohibited.
+
+All information is provided in good faith and intended only for legitimate educational review, recruitment evaluation, and learning reference. Any attempt to distort, impersonate, misrepresent, or use this content for deceptive or unlawful activity shall constitute a breach of personal privacy and intellectual property rights.
+
+Such actions may be subject to penalties under the Copyright Act, 1957 (India) and related legal provisions.
+
+The author retains all moral and legal rights to the material displayed herein, including the right of acknowledgment and protection from misuse.
+
+By accessing this website, the viewer affirms that they do so for fair, ethical, and educational purposes only.
+    </p>
+    <div style="text-align:right;">
+      <button class="modal-close" id="closeDisclaimer">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('disclaimer-modal');
+  const openBtn = document.getElementById('readDisclaimer');
+  const closeBtn = document.getElementById('closeDisclaimer');
+
+  openBtn.addEventListener('click', () => {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+  closeBtn.addEventListener('click', () => {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+</script>
+<!-- ⚖️ END OF FOOTER -->
+
+</body>
+</html>
